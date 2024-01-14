@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #3498db;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #2980b9;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .section-title {
+      color: #3498db;
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    .section-content {
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    .subscription-box {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      text-align: center;
+      margin: 20px;
+      width: 300px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .subscription-box:hover {
+      transform: scale(1.05);
+    }
+
+    .subscription-box.left {
+      float: left;
+      margin-right: 20px;
+    }
+
+    .subscription-box.right {
+      float: right;
+      margin-left: 20px;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #666;
+      margin: 10px 0;
+    }
+
+    .basic-box, .plus-box {
+      border: 2px solid #3498db;
+    }
+
+    .plus-box {
+      border: 2px solid #2ecc71;
+    }
+
+    .price {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .buy-button {
+      display: block;
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .buy-button:hover {
+      background-color: #2980b9;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .fadeIn {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .small-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#inicio" onclick="showSection('inicio')">Inicio</a>
+    <a href="#noticias" onclick="showSection('noticias')">Noticias</a>
+    <a href="#suscripciones" onclick="showSection('suscripciones')">Suscripciones</a>
+  </nav>
+
+  <div class="container" id="inicio">
+    <h1>Sky</h1>
+    <p>Soy emocionado/a de presentarles Sky, la plataforma diseñada exclusivamente para ustedes, creada por estudiantes para estudiantes. En Sky, nos hemos propuesto hacer que su experiencia escolar sea aún más increíble y divertida. Somos un grupo privado comprometido con el apoyo mutuo y el éxito académico.</p>
+    <p>¿Te enfrentas a desafíos con tareas, actividades o quizz? ¡No te preocupes! En Sky, puedes recibir ayuda de tus compañeros de clase y compartir tus conocimientos para que todos crezcamos juntos.</p>
+    <p>Pero eso no es todo. Queremos agregar un toque de diversión a tu rutina diaria. ¿Te gustaría recibir noticias increíbles y graciosas directamente en tu feed? ¡Estás de suerte! Sky te ofrece una variedad de suscripciones para que elijas la que mejor se adapte a tus preferencias.</p>
+    <p>Ahora, imagina un mundo donde aprender es emocionante y donde la colaboración es la clave del éxito académico. Ese mundo es Sky. Un lugar donde la diversión y el conocimiento se encuentran para hacer de tu experiencia escolar algo verdaderamente excepcional.</p>
+    <p>Únete a nosotros en Sky y haz que tu experiencia escolar sea aún más emocionante. Descubre el poder de la colaboración, el apoyo mutuo y la diversión en una sola plataforma. Estamos ansiosos de tenerte a bordo. Recuerda, en Sky, ¡el conocimiento es tan vasto como el cielo! 🌌 ¡Te esperamos!</p>
+  </div>
+
+  <div class="container hidden" id="noticias">
+    <h2 class="section-title">Noticias</h2>
+    <p class="section-content">En Sky, como dijimos, puedes recibir noticias geniales y graciosas, donde también nos podrás enviar noticias tú. Pero eso solo está disponible para los Plus. Los usuarios Basic solo podrán recibir noticias, creando un espacio agradable para desaburrirse cuando estén aburridos.</p>
+    <p class="section-content">Sky no solo se trata de tareas y actividades. También nos gusta mantenerte entretenido/a con las últimas noticias, anécdotas divertidas y curiosidades interesantes. ¡La diversión es parte de la experiencia Sky!</p>
+    <p class="section-content">En nuestra sección de noticias, te ofrecemos una mezcla única de información educativa y entretenimiento. Descubre datos fascinantes, chismes escolares y noticias exclusivas solo para los suscriptores Plus.</p>
+    <p class="section-content">Además, si eres de los que les gusta estar al tanto de todo, los Plus tienen la increíble oportunidad de enviarnos sus propias noticias y participar en la creación del contenido de Sky. ¡Tu voz importa!</p>
+    <div class="subscription-box left fadeIn">
+      <img class="small-image" src="https://cdn.discordapp.com/attachments/1188536432982245378/1196121313924890624/40678825-4c2b-4d2e-a459-7849b78bc25f.png" alt="Imagen 1">
+    </div>
+    <div class="subscription-box right fadeIn">
+      <img class="small-image" src="https://cdn.discordapp.com/attachments/1188536432982245378/1196121364789198958/25313db6-9045-4696-9b1d-293720f736c1.png" alt="Imagen 2">
+    </div>
+  </div>
+
+  <div class="container hidden" id="suscripciones">
+    <h2 class="section-title">Suscripciones</h2>
+    <div class="subscription-box left basic-box fadeIn">
+      <h2>Basic</h2>
+      <p>. Recibes tareas y actividades.</p>
+      <p>. Tienes noticias Básic.</p>
+      <p>. Tu privacidad va a ser resguardada.</p>
+      <p>. No podrás escribir.</p>
+      <p>. No podrás tener reembolso.</p>
+      <p>. Soporte Técnico de 3:00 pm a 5:30 pm.</p>
+      <p>. No recibirás algunas cosas a tiempo.</p>
+      <p>. Más información sobre los beneficios adicionales de Basic.</p>
+      <div class="price">$10,000/mes</div>
+      <a href="tel:3204311546" class="buy-button">Comprar</a>
+      <img class="small-image" src="https://cdn.discordapp.com/attachments/1188536432982245378/1196121292638781581/bf924f9a-b184-48a7-a7d3-aefd06455ea8.png" alt="Imagen 1">
+    </div>
+
+    <div class="subscription-box right plus-box fadeIn">
+      <h2>Plus</h2>
+      <p>. Recibes tareas, actividades y quizz.</p>
+      <p>. Tienes noticias Plus.</p>
+      <p>. Tu privacidad será resguardada.</p>
+      <p>. Sí podrás escribir.</p>
+      <p>. Sí podrás tener reembolsos del 15%.</p>
+      <p>. Soporte Técnico 24/7.</p>
+      <p>. Recibirás el 80% al tiempo.</p>
+      <p>. Más información sobre los beneficios adicionales de Plus.</p>
+      <div class="price">$15,000/mes</div>
+      <a href="tel:3204311546" class="buy-button">Comprar</a>
+      <img class="small-image" src="https://cdn.discordapp.com/attachments/1188536432982245378/1196121342941089883/fdcbac57-9fb2-43a8-9c47-1a3cbf0812af.png" alt="Imagen 2">
+    </div>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      // Ocultar todas las secciones
+      document.querySelectorAll('.container').forEach(function(section) {
+        section.classList.add('hidden');
+      });
+
+      // Mostrar la sección seleccionada
+      document.getElementById(sectionId).classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
